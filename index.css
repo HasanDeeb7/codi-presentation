@@ -57,3 +57,105 @@ a::before {
 a:hover::before {
   transform: scaleX(1);
 }
+#quit-smoking-modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(20, 20, 20, .5);
+  padding: 10rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#form-container{
+  background-color: #e5e5e5;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#left-green{
+  position: absolute;
+  background-color: #26a113;
+  width: 5%;
+  height: 100%;
+  left: 0;
+}
+#right-green{
+  position: absolute;
+  background-color: #26a113;
+  width: 5%;
+  height: 100%;
+  right: 0;
+}
+#form-container > ul{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#form-container > ul > li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+#age{
+  width: 8rem;
+}
+.input{
+  border-radius: 30px;
+  padding: .4rem;
+  cursor: text;
+}
+#select{
+  cursor: pointer;
+  text-align: center;
+}
+#medical-radio-container > li{
+  list-style: none;
+}
+#medical-radio-container{
+ display: flex; 
+ justify-content: space-between;
+}
+#medical-radio-container > li > input{
+  margin-left: .2rem;
+}
+#btn-container{
+  width:100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+#submit-btn{
+  background-color: #26a113;
+  color: white;
+  width: 30%;
+  padding: .4rem;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+#submit-btn:hover{
+  background-color: rgb(97, 216, 79);
+}
+#cancel-btn{
+  background-color: white;
+  padding: .4rem;
+  width: 10%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#cancel-btn:hover{
+  background-color: #d5d5d5;
+}
