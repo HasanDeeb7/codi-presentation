@@ -11,132 +11,6 @@
     />
   </head>
   <body>
-    <div id="quit-smoking-modal">
-        <div id="form-container">
-          <div id="left-green">   </div>
-          <div id="right-green">  </div>
-        <ul>
-          <li>
-            <label for="fname">First Name: </label
-            ><input type="text" id="fname" class="input" required />
-          </li>
-          <li>
-            <label for="name">Last Name: </label>
-            <input type="text" id="lname" class="input" required />
-          </li>
-          <li>
-            <label for="age">Date of Birth </label
-            ><input type="date" id="age" class="input" max="2023-12-12" required />
-          </li>
-          <li type="none">
-            <label>Country: </label>
-            <select class="input" id="select">
-              <option value=""></option>
-              <optgroup label="North America">
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="MX">Mexico</option>
-                <option value="AI">Anguilla</option>
-                <option value="AG">Antigua and Barbuda</option>
-                <option value="AW">Aruba</option>
-                <option value="BS">Bahamas</option>
-              </optgroup>
-              <optgroup label="South America">
-                <option value="AR">Argentina</option>
-                <option value="BO">Bolivia</option>
-                <option value="BR">Brazil</option>
-                <option value="CL">Chile</option>
-                <option value="CO">Colombia</option>
-              </optgroup>
-              <optgroup label="Europe">
-                <option value="GB">United Kingdom</option>
-                <option value="AT">Austria</option>
-                <option value="BE">Belgium</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-                <option value="GR">Greece</option>
-                <option value="HU">Hungary</option>
-                <option value="IT">Italy</option>
-                <option value="NL">Netherlands</option>
-                <option value="PL">Poland</option>
-                <option value="PT">Portugal</option>
-                <option value="ES">Spain</option>
-                <option value="FI">Finland</option>
-                <option value="SE">Sweden</option>
-                <option value="TR">Turkey</option>
-              </optgroup>
-              <optgroup label="Asia">
-                <option value="BH">Bahrain</option>
-                <option value="HK">Hong Kong</option>
-                <option value="IN">India</option>
-                <option value="IR">Iran</option>
-                <option value="IQ">Iraq</option>
-                <option value="IL">Palestine</option>
-                <option value="JP">Japan</option>
-                <option value="JO">Jordan</option>
-                <option value="KW">Kuwait</option>
-                <option value="LB">Lebanon</option>
-                <option value="OM">Oman</option>
-                <option value="QA">Qatar</option>
-                <option value="SA">Saudi Arabia</option>
-                <option value="SY">Syria</option>
-                <option value="AE">United Arab Emirates</option>
-              </optgroup>
-              <optgroup label="Australia / Oceania">
-                <option value="AS">American Samoa</option>
-                <option value="AU">Australia</option>
-                <option value="CK">Cook Islands</option>
-                <option value="FJ">Fiji</option>
-                <option value="PF">French Polynesia (Tahiti)</option>
-                <option value="GU">Guam</option>
-                <option value="KB">Kiribati</option>
-                <option value="MH">Marshall Islands</option>
-              </optgroup>
-              <optgroup label="Africa">
-                <option value="DZ">Algeria</option>
-                <option value="EG">Egypt</option>
-                <option value="GH">Ghana</option>
-                <option value="LR">Liberia</option>
-                <option value="LY">Libya</option>
-                <option value="MA">Morocco</option>
-                <option value="SN">Senegal</option>
-                <option value="ZA">South Africa</option>
-                <option value="SD">Sudan</option>
-                <option value="TN">Tunisia</option>
-                <option value="UG">Uganda</option>
-              </optgroup>
-            </select>
-          </li>
-          <div id="medical-radio-container">
-            <li><label>Do you have a Medical Condition? </label></li>
-            <li>
-              <label for="medical-condition1"
-                >Yes</label><input
-                  type="radio"
-                  name="medical-condition"
-                  id="medical-condition1"
-                  value="true"
-                  required
-              />
-            </li>
-            <li>
-              <label for="medical-condition0"
-                >No</label><input
-                  type="radio"
-                  name="medical-condition"
-                  id="medical-condition0"
-                  value="false"
-                  required
-              />
-            </li>
-          </div>
-        </ul>
-        <div id="btn-container">
-            <input type="button" id="submit-btn" value="Submit">
-            <input type="button" value="Cancel" id="cancel-btn">
-        </div>
-      </div>
-    </div>
     <div id="header-container">
       <div id="left-part-container">
         <div id="sidebar-btn"><i class="fa-solid fa-bars"></i></div>
@@ -145,11 +19,68 @@
       <div id="nav-container">
         <ul id="nav-wrapper">
           <li class="nav"><a href="#home">Home</a></li>
-          <li class="nav"><a href="about">About</a></li>
-          <li class="nav"><a href="contact">Contact</a></li>
-          <li class="nav"><a href="quit">Quit Smoking</a></li>
+          <li class="nav"><a href="#about">About</a></li>
+          <li class="nav"><a href="#contact">Contact</a></li>
+          <li class="nav">
+            <a href="#">Quit Smoking</a>
+          </li>
         </ul>
       </div>
     </div>
+    <div >
+        <img src="./Assets/Lungs difference.jpeg" alt="picture showing the banner" id="lungs">
+        </div>
+        <!--the full picture at the beginning of the page-->
+        <article id="grid-container1">
+            <section class="section reversed">
+              <img src="./Assets/Heart trapped.jpeg" alt="a trapped heart" class="squarepic">
+                <div class="paragraph">
+                    <h1>Smoking Kills!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit doloribus animi voluptas temporibus. Iste deserunt suscipit, asperiores dicta quas laborum sit. Iste deleniti voluptatem dolores modi vitae ratione saepe.</p>
+                  </div>
+            </section>
+            <section class="section ">
+                <img src="./Assets/Graph.jpeg" alt="graph that shows smokers and non smokers" class="squarepic">
+                <div class="paragraph">
+                    <h1>Is it really that hard to quit?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestiae, numquam dolorum veritatis atque, autem vitae mollitia illum dolorem distinctio quod architecto odit doloremque reiciendis voluptates repellat voluptatibus non assumenda?</p>
+                </div>
+                
+            </section>
+            <section class="section" >
+                <div class="paragraph">
+                    <h1>Our life savor plan</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat a mollitia asperiores deleniti molestias aspernatur neque pariatur! Sint velit reprehenderit magnam asperiores obcaecati, incidunt iste dolore soluta similique quidem ipsam?</p>
+                </div>
+                <img src="./Assets/Quit smoking.jpeg" alt="Quit sign made by cigarettes" class="squarepic">
+            </section>
+        </article>
+        <!--end of the article sections-->
+        <div class="form-container hidden">
+            <h1 class="ftitle">Apply Now To Quit Smoking!</h1>
+            <p class="ftitle" style="font-style: italic;">Please fill in the information below</p>
+        <form id="applyform">
+            <fieldset>
+                <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+            </fieldset>
+            <fieldset>
+                <label for="5cigs"><input id="5cigs" type="radio" name="cig-day" class="raio-buttons" />5 cigarettes</label>
+                <label for="10cigs"><input id="10cigs" type="radio" name="cig-day" class="raio-buttons" />10 cigarettes</label>
+                <label for="20cigs"><input id="20cigs" type="radio" name="cig-day" class="raio-buttons" />20+ cigarettes</label>
+            </fieldset>
+            <fieldset>
+                <label for="age">Input your age (years): <input id="age" type="number" name="age" min="18" max="60" /></label>
+            </fieldset>
+            <input type="submit" value="SUBMIT!" />
+        </form>
+         </div>
+        <!--end of the form-->
+        <footer id="grid-container2">
+            <div id="info"></div>
+            <div id="contact-info"></div>
+        </footer>
+        <!--footer to display our info-->
   </body>
 </html>

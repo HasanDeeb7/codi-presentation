@@ -4,6 +4,9 @@
   border: 0;
   cursor: default;
 }
+.hidden{
+  display: none;
+}
 
 #header-container {
   display: flex;
@@ -57,106 +60,113 @@ a::before {
 a:hover::before {
   transform: scaleX(1);
 }
-#quit-smoking-modal{
-  display:none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(20, 20, 20, .5);
-  padding: 10rem;
+
+/* Yahya */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#lungs{
+    height: 100vh;
+    width: 100%;
+    object-fit:fill;
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+}
+.navbutton{
+    margin-left:20px;
+    padding:20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: grey;
+    border-radius: 20%;
+}
+.navbutton:hover{
+    background-color: rgba(128, 128, 128, 0.452);
+    color:white;
+    transition: 1000ms;
+    
+}
+#grid-container1{
   width: 100%;
-  height: 100%;
-  /* display: flex; */
+    padding:3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.squarepic{
+    display: inline-block;
+    width:30rem;
+    height:20rem;
+    margin:2.5rem;
+    border-radius: 6px;
+}
+.section{
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 5rem;
+  /* padding: 5rem 0 ; */
 }
-#form-container{
-  background-color: #e5e5e5;
-  position: relative;
-  width: 50%;
-  height: 50%;
-  padding: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#left-green{
-  position: absolute;
-  background-color: #26a113;
-  width: 5%;
-  height: 100%;
-  left: 0;
-}
-#right-green{
-  position: absolute;
-  background-color: #26a113;
-  width: 5%;
-  height: 100%;
-  right: 0;
-}
-#form-container > ul{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-#form-container > ul > li{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-}
-
-#age{
-  width: 8rem;
-}
-.input{
-  border-radius: 30px;
-  padding: .4rem;
-  cursor: text;
-}
-#select{
-  cursor: pointer;
-  text-align: center;
-}
-#medical-radio-container > li{
-  list-style: none;
-}
-#medical-radio-container{
- display: flex; 
- justify-content: space-between;
-}
-#medical-radio-container > li > input{
-  margin-left: .2rem;
-}
-#btn-container{
-  width:100%;
-  display: flex;
+.reversed{
   flex-direction: row-reverse;
-  justify-content: center;
-  margin-top: 5rem;
-  gap: 2rem;
 }
-#submit-btn{
-  background-color: #26a113;
-  color: white;
-  width: 30%;
-  padding: .4rem;
-  border-radius: 20px;
-  cursor: pointer;
-
+.paragraph{
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    justify-content: center;
+    /* height: 300px; */
+    /* text-align: center; */
+    /* position:relative; */
+    /* bottom:100px; */
+    /* padding-left:50px;
+    padding-right:50px; */
+    font-size: 20px;
+    margin:2.5rem
 }
-#submit-btn:hover{
-  background-color: rgb(97, 216, 79);
+fieldset{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
 }
-#cancel-btn{
-  background-color: white;
-  padding: .4rem;
-  width: 10%;
-  border-radius: 20px;
-  cursor: pointer;
+.form-container{
+    width: 500px;
+    position: relative;
+    margin-left: 30%;
 }
-#cancel-btn:hover{
-  background-color: #d5d5d5;
+.ftitle{
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+}
+label{
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+}
+input[type="text"],input[type="email"]{
+    display:block;
+    margin:10px 0 10px 160px;
+    height: 20px;
+}
+input[type="submit"]{
+    text-align: center;
+    margin:10px 0 10px 200px; 
+    font-size: 20px;
 }
