@@ -9,8 +9,162 @@
       href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
       rel="stylesheet"
     />
+    <script src="./js/script.js"></script>
   </head>
   <body>
+    <div id="quit-smoking-modal">
+
+      <div id="form-container">
+        <div id="left-green"></div>
+        <div id="right-green"></div>
+        <ul>
+          <li>
+            <label for="fname">First Name: </label
+            ><input type="text" id="fname" class="input" required />
+          </li>
+          <li>
+            <label for="name">Last Name: </label>
+            <input type="text" id="lname" class="input" required />
+          </li>
+          <li>
+            <label for="age">Date of Birth </label
+            ><input
+              type="date"
+              id="age"
+              class="input"
+              max="2023-12-12"
+              required
+            />
+          </li>
+          <li type="none">
+            <label>Country: </label>
+            <select class="input" id="select">
+              <option value=""></option>
+              <optgroup label="North America">
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="MX">Mexico</option>
+                <option value="AI">Anguilla</option>
+                <option value="AG">Antigua and Barbuda</option>
+                <option value="AW">Aruba</option>
+                <option value="BS">Bahamas</option>
+              </optgroup>
+              <optgroup label="South America">
+                <option value="AR">Argentina</option>
+                <option value="BO">Bolivia</option>
+                <option value="BR">Brazil</option>
+                <option value="CL">Chile</option>
+                <option value="CO">Colombia</option>
+              </optgroup>
+              <optgroup label="Europe">
+                <option value="GB">United Kingdom</option>
+                <option value="AT">Austria</option>
+                <option value="BE">Belgium</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="GR">Greece</option>
+                <option value="HU">Hungary</option>
+                <option value="IT">Italy</option>
+                <option value="NL">Netherlands</option>
+                <option value="PL">Poland</option>
+                <option value="PT">Portugal</option>
+                <option value="ES">Spain</option>
+                <option value="FI">Finland</option>
+                <option value="SE">Sweden</option>
+                <option value="TR">Turkey</option>
+              </optgroup>
+              <optgroup label="Asia">
+                <option value="BH">Bahrain</option>
+                <option value="HK">Hong Kong</option>
+                <option value="IN">India</option>
+                <option value="IR">Iran</option>
+                <option value="IQ">Iraq</option>
+                <option value="IL">Palestine</option>
+                <option value="JP">Japan</option>
+                <option value="JO">Jordan</option>
+                <option value="KW">Kuwait</option>
+                <option value="LB">Lebanon</option>
+                <option value="OM">Oman</option>
+                <option value="QA">Qatar</option>
+                <option value="SA">Saudi Arabia</option>
+                <option value="SY">Syria</option>
+                <option value="AE">United Arab Emirates</option>
+              </optgroup>
+              <optgroup label="Australia / Oceania">
+                <option value="AS">American Samoa</option>
+                <option value="AU">Australia</option>
+                <option value="CK">Cook Islands</option>
+                <option value="FJ">Fiji</option>
+                <option value="PF">French Polynesia (Tahiti)</option>
+                <option value="GU">Guam</option>
+                <option value="KB">Kiribati</option>
+                <option value="MH">Marshall Islands</option>
+              </optgroup>
+              <optgroup label="Africa">
+                <option value="DZ">Algeria</option>
+                <option value="EG">Egypt</option>
+                <option value="GH">Ghana</option>
+                <option value="LR">Liberia</option>
+                <option value="LY">Libya</option>
+                <option value="MA">Morocco</option>
+                <option value="SN">Senegal</option>
+                <option value="ZA">South Africa</option>
+                <option value="SD">Sudan</option>
+                <option value="TN">Tunisia</option>
+                <option value="UG">Uganda</option>
+              </optgroup>
+            </select>
+          </li>
+            <li><label>Do you have a Medical Condition? </label>
+              <div class="radios">
+
+                <label for="medical-condition1">Yes</label
+                  ><input
+                  type="radio"
+                  name="medical-condition"
+                  id="medical-condition1"
+                  value="true"
+                  required
+                  />
+                  
+                  <label for="medical-condition0">No</label
+                    ><input
+                    type="radio"
+                    name="medical-condition"
+                    id="medical-condition0"
+                    value="false"
+                    required
+                    />
+                  </div>
+            </li>
+          <li>
+
+            <label for="smoking-period">Smoking Period (in Years) </label>
+            <div class="radios">
+              
+              <label for="smoking-period-1">less than 1 year</label><input type="radio" name="smoking-period" id="smoking-period-1">
+              <label for="smoking-period1-3">1-3</label><input type="radio" name="smoking-period" id="smoking-period1-3">
+              <label for="smoking-period+5">+5 Years</label><input type="radio" name="smoking-period" id="smoking-period+5">
+            </div>
+          </li>
+          
+        </ul>
+        <div id="btn-container">
+          <input
+            type="button"
+            id="submit-btn"
+            value="Submit"
+            onclick="submit()"
+          />
+          <input
+            type="button"
+            value="Cancel"
+            id="cancel-btn"
+            onclick="closeModal()"
+          />
+        </div>
+      </div>
+    </div>
     <div id="header-container">
       <div id="left-part-container">
         <div id="sidebar-btn"><i class="fa-solid fa-bars"></i></div>
@@ -22,7 +176,7 @@
           <li class="nav"><a href="#about">About</a></li>
           <li class="nav"><a href="#contact">Contact</a></li>
           <li class="nav">
-            <a href="#">Quit Smoking</a>
+            <a onclick=openModal()>Quit Smoking</a>
           </li>
         </ul>
       </div>
@@ -56,7 +210,7 @@
             </section>
         </article>
         <!--end of the article sections-->
-        <div class="form-container hidden">
+        <!-- <div class="form-container hidden">
             <h1 class="ftitle">Apply Now To Quit Smoking!</h1>
             <p class="ftitle" style="font-style: italic;">Please fill in the information below</p>
         <form id="applyform">
@@ -75,7 +229,7 @@
             </fieldset>
             <input type="submit" value="SUBMIT!" />
         </form>
-         </div>
+         </div> -->
         <!--end of the form-->
         <footer id="grid-container2">
             <div id="info"></div>

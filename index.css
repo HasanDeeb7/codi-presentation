@@ -3,10 +3,127 @@
   margin: 0;
   border: 0;
   cursor: default;
+  transition: all 300ms ease-in;
 }
-.hidden{
-  display: none;
+
+#quit-smoking-modal{
+  display:none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(20, 20, 20, .5);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
+#close-container{
+  position: relative;
+  top: 0;
+  background-color: green;
+  z-index: 2;
+}
+#close-btn{
+  padding: 1rem;
+  width: 6rem;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin-top: 6rem;
+  border-radius: 20px;
+}
+#form-container{
+  background-color: #e5e5e5;
+  position: relative;
+  width: 50%;
+  height: 80%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+#left-green, #right-green{
+  position: absolute;
+  background-color: #26a113;
+  width: 5%;
+  height: 100%;
+}
+#left-green{  
+  border-radius: 30px 0 0 30px;
+  left: 0;
+}
+#right-green{
+  right: 0;
+  border-radius: 0 30px 30px 0;
+}
+#form-container > ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+#form-container > ul > li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+#age{
+  width: 8rem;
+}
+.input{
+  border-radius: 30px;
+  padding: .4rem;
+  cursor: text;
+}
+#select{
+  cursor: pointer;
+  text-align: center;
+}
+.radios{
+  display: flex;
+  gap: .6rem;
+  margin-right:3rem ;
+}
+
+#smoking-period-radios{
+  display: flex;
+  gap: 1rem;
+}
+#btn-container{
+  width:100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+#submit-btn{
+  background-color: #26a113;
+  color: white;
+  width: 30%;
+  padding: .4rem;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+#submit-btn:hover{
+  background-color: rgb(97, 216, 79);
+}
+#cancel-btn{
+  background-color: white;
+  padding: .4rem;
+  width: 10%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#cancel-btn:hover{
+  background-color: #d5d5d5;
+}
+
 
 #header-container {
   display: flex;
@@ -125,17 +242,12 @@ nav{
   flex-direction: row-reverse;
 }
 .paragraph{
-    /* display: inline-block; */
+  
     display: flex;
     flex-direction: column;
     width: 30rem;
     justify-content: center;
-    /* height: 300px; */
-    /* text-align: center; */
-    /* position:relative; */
-    /* bottom:100px; */
-    /* padding-left:50px;
-    padding-right:50px; */
+    
     font-size: 20px;
     margin:2.5rem
 }
