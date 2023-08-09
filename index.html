@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health Care</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
       rel="stylesheet"
@@ -12,6 +13,13 @@
     <script src="./js/script.js"></script>
   </head>
   <body>
+    <!--adding div and span for progress , wouroud-->
+    <div id="progress">
+        <span id="progress-value">
+            <!--icon -->
+            <i class="fa fa-arrow-up" style="color: #1a630e;"></i>
+        </span>
+    </div>
     <div id="quit-smoking-modal">
 
       <div id="form-container">
@@ -142,9 +150,9 @@
             <label for="smoking-period">Smoking Period (in Years) </label>
             <div class="radios">
               
-              <label for="smoking-period-1">1- Years</label><input type="radio" name="smoking-period" id="smoking-period-1">
+              <label for="smoking-period-1">less than 1 year</label><input type="radio" name="smoking-period" id="smoking-period-1">
               <label for="smoking-period1-3">1-3</label><input type="radio" name="smoking-period" id="smoking-period1-3">
-              <label for="smoking-period+5">5+ Years</label><input type="radio" name="smoking-period" id="smoking-period+5">
+              <label for="smoking-period+5">+5 Years</label><input type="radio" name="smoking-period" id="smoking-period+5">
             </div>
           </li>
           
@@ -167,13 +175,14 @@
     </div>
     <div id="header-container">
       <div id="left-part-container">
-        <div id="header-main"><i class="fa-solid fa-leaf"></i><h3>Be Healthier</h3></div>
+        <!--changing h3 -> h2 wouroud-->
+        <h2>Be Healthier</h2>
       </div>
       <div id="nav-container">
         <ul id="nav-wrapper">
-          <li class="nav"><a href="#damages">Damages</a></li>
-          <li class="nav"><a href="#faq">Is It Hard ?</a></li>
-          <li class="nav"><a href="#plan">Plan</a></li>
+          <li class="nav"><a href="#header">Home</a></li>
+          <li class="nav"><a href="#info">About</a></li>
+          <li class="nav"><a href="#contact-info">Contact</a></li>
           <li class="nav">
             <a onclick=openModal()>Quit Smoking</a>
           </li>
@@ -185,43 +194,88 @@
         </div>
         <!--the full picture at the beginning of the page-->
         <article id="grid-container1">
-            <section  id="damages" class="section reversed">
-              <img src="./Assets/Heart trapped.jpeg" alt="a trapped heart" class="squarepic">
-                <div  class="paragraph">
+            <section class="section reversed ">
+                <!--changing the photo , wouroud-->
+              
+                <div class="paragraph">
+                    <!--changing paragraph , wouroud-->
                     <h1>Smoking Kills!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit doloribus animi voluptas temporibus. Iste deserunt suscipit, asperiores dicta quas laborum sit. Iste deleniti voluptatem dolores modi vitae ratione saepe.</p>
-                  </div>
+                    <p>Smoking has a detrimental impact on both our health and body. The harmful chemicals in cigarettes, such as nicotine and tar, can lead to serious health conditions like lung cancer, heart disease, and respiratory issues. The toxins in smoke harm not only the lungs but also other organs, affecting overall well-being and reducing life expectancy. 
+                    </p>
+                    </div>
+                    <img src="./Assets/Lungs difference.jpeg" alt="lung of a smoker vs healthy long" class="squarepic">
             </section>
-            <section id='faq' class="section ">
-                <img src="./Assets/Graph.jpeg" alt="graph that shows smokers and non smokers" class="squarepic">
-                <div class="paragraph">
-                    <h1>Is it really that hard to quit?</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestiae, numquam dolorum veritatis atque, autem vitae mollitia illum dolorem distinctio quod architecto odit doloremque reiciendis voluptates repellat voluptatibus non assumenda?</p>
-                </div>
+            <section class="section ">
                 
-            </section>
-            <section id='plan' class="section" >
                 <div class="paragraph">
+                    <!--changing paragraph and title wouroud-->
+                    <h1>Why Quitting ??</h1>
+                    <p>Quitting smoking offers numerous benefits for one's health. Within just a few weeks of quitting, lung function begins to improve, reducing the risk of respiratory problems. The cardiovascular system also sees positive changes, lowering the chances of heart disease. Additionally, quitting smoking leads to improved sense of taste, smell, and energy levels, contributing to an overall healthier lifestyle. 
+                    </p>
+                    </div>
+                <img src="./Assets/Graph.jpeg" alt="graph that shows smokers and non smokers" class="squarepic">
+            </section>
+            <section class="section reversed" >
+                
+                <div class="paragraph">
+                    <!--changing paragraph wouroud-->
                     <h1>Our life savor plan</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat a mollitia asperiores deleniti molestias aspernatur neque pariatur! Sint velit reprehenderit magnam asperiores obcaecati, incidunt iste dolore soluta similique quidem ipsam?</p>
+                    <p>Developing effective strategies for quitting smoking is essential. Many find success through gradual reduction, setting a quit date, or using nicotine replacement therapies like patches or gum. Behavioral techniques such as identifying triggers and finding healthier coping mechanisms are also helpful. Surrounding oneself with supportive friends and family and seeking professional guidance further enhance the chances of successful quitting. 
+                    </p>
                 </div>
                 <img src="./Assets/Quit smoking.jpeg" alt="Quit sign made by cigarettes" class="squarepic">
             </section>
+            <!--adding the last section wouroud-->
+            <section class="section ">
+                
+                <div class="paragraph">
+                    <h1>We're here for your Support!</h1>
+                    <p>Remember, you are not alone on this journey. Within this supportive environment, a helping hand is always here for you. When you decide to quit smoking, having the right support can make all the difference. Research shows that individuals who receive support during their quitting journey are more likely to succeed.A strong support system is crucial for those aiming to quit smoking. Friends, family, and support groups can provide the encouragement and assistance that can turn your journey towards a smoke-free life into a successful reality.   
+                    </p>
+                </div>
+                <img src="./Assets/Support team.jpg" alt="support team" class="squarepic">
+            </section>
         </article>
+    
+    
+
+        <!--new footer wouroud-->
+<footer class="footer-distributed"> 
+    <div class="footer-left">
+        <h3>Be<span>Healthier</span></h3> 
+           <p class="footer-company-name">Copyright © 2023 <strong>Be Healthier </strong> All rights reserved</p>
+     
+    <div class="footer-icons">
+        <!-- still have to add icons-->
+        <a href="#" id="face"><i class="fa fa-facebook"></i></a>
+        <a href="#" id="insta"><i class="fa fa-instagram"></i></a>
+        <a href="#" id="link"><i class="fa fa-linkedin"></i></a>
+        <a href="#" id="twit"><i class="fa fa-twitter"></i></a>
+         <a href="#" id="ytub"><i class="fa fa-youtube"></i></a>
+        </div> 
+    </div>      
+    <div class="footer-center">
+        <div>
+            <i id="location" class="fa fa-map-marker"></i>
+            <p><span>Lebanon</span>Tripoli</p>
+        </div>  
+        <div>
+            <i id="phone" class="fa fa-phone"></i>
+            <p>+961 ******</p>
+        </div>
+        <div>
+            <i id="email" class="fa fa-envelope"></i>
+            <p>********@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-company-about">
+        <span>About the website</span>
+        Welcome to <strong>Be Helthier</strong> your ultimate resource for holistic well-being. Explore a wide range of articles encompassing physical and mental health, offering insights into effective strategies for leading a healthier life. Discover tips, habits, and advice to optimize your wellness journey and make informed choices for a happier, healthier you."
+        </p>
         
-        <footer id="grid-container2">
-            <div id="info">
-              <p>We are a team of individuals trying to help reduce the nummbers of smokers around the world.
-                This website is meant to spread this idea, and give all its users a free plan to help unchain them from the shackles of nicotine...
-              </p>
-            </div>
-            <div id="contact-info">
-              <ul>
-                <li>phone number: +961 ** *** ***</li>
-                <li>email: *******@******.com</li>
-              </ul>
-            </div>
-        </footer>
-        <!--footer to display our info-->
-  </body>
+    </div>
+  </footer> 
+</body>
 </html>
