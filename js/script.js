@@ -14,7 +14,8 @@ function closeModal(){
     }
     function submit(){
      const form = document.getElementById("form-container");
-     form.innerHTML = 'Your Response Have Been Submitted Successfully, Thank You! '
+     form.innerHTML =
+       '<div id="submition"><i class="fa-solid fa-check"></i>Your Response Have Been Submitted Successfully, Thank You!</div> ';
      form.appendChild(button)
 
     }

@@ -4,17 +4,23 @@
   border: 0;
   cursor: default;
   transition: all 300ms ease-in;
+  font-family: 'Times New Roman', Times, serif;
 }
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #quit-smoking-modal{
+  display:none;
+  z-index:200;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(20, 20, 20, .5);
-  padding: 10rem;
   width: 100%;
   height: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -22,32 +28,33 @@
   background-color: #e5e5e5;
   position: relative;
   width: 50%;
-  height: 50%;
+  height: 80%;
   padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 30px;
 }
-#left-green{
+#left-green, #right-green{
   position: absolute;
   background-color: #26a113;
   width: 5%;
   height: 100%;
+}
+#left-green{  
+  border-radius: 30px 0 0 30px;
   left: 0;
 }
 #right-green{
-  position: absolute;
-  background-color: #26a113;
-  width: 5%;
-  height: 100%;
   right: 0;
+  border-radius: 0 30px 30px 0;
 }
 #form-container > ul{
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-content: space-between;
 }
 #form-container > ul > li{
   display: flex;
@@ -55,27 +62,26 @@
   align-items: center;  
 }
 
-#age{
-  width: 8rem;
-}
+
 .input{
   border-radius: 30px;
   padding: .4rem;
   cursor: text;
+  width: 12rem;
 }
 #select{
   cursor: pointer;
   text-align: center;
 }
-#medical-radio-container > li{
-  list-style: none;
+.radios{
+  display: flex;
+  gap: .6rem;
+  margin-right:3rem ;
 }
-#medical-radio-container{
- display: flex; 
- justify-content: space-between;
-}
-#medical-radio-container > li > input{
-  margin-left: .2rem;
+
+#smoking-period-radios{
+  display: flex;
+  gap: 1rem;
 }
 #btn-container{
   width:100%;
@@ -97,17 +103,43 @@
 #submit-btn:hover{
   background-color: rgb(97, 216, 79);
 }
-
+#cancel-btn{
+  background-color: white;
+  padding: .4rem;
+  width: 10%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#cancel-btn:hover{
+  background-color: #d5d5d5;
+}
 #close-btn{
   padding: 1rem;
   width: 6rem;
-  background-color: red;
-  color: white;
+  background-color:#cdcdcd;
+  color: black;
   cursor: pointer;
   margin-top: 6rem;
   border-radius: 20px;
 }
+#submition{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+#submition > i{
+  background-color: #26a113;
+  border-radius: 50px;
+  color: white;
+  padding: 5px;
+}
 
+
+#header-main{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
 #header-container {
   display: flex;
   padding: 0 4rem;
@@ -162,13 +194,13 @@ a:hover::before {
 }
 
 /* Yahya */
-/* *{
+*{
     box-sizing: border-box;
     margin:0;
     padding:0;
     font-family: 'Times New Roman', Times, serif;
 
-} */
+}
 #lungs{
     height: 100vh;
     width: 100%;
@@ -219,6 +251,7 @@ nav{
   align-items: center;
   justify-content: center;
   gap: 5rem;
+  padding: 1rem;
   /* padding: 5rem 0 ; */
 }
 .reversed{
@@ -234,7 +267,7 @@ nav{
     font-size: 20px;
     margin:2.5rem
 }
-/* fieldset{
+fieldset{
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -264,4 +297,50 @@ input[type="submit"]{
     text-align: center;
     margin:10px 0 10px 200px; 
     font-size: 20px;
-} */
+}
+#header{
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color:white;
+}
+#header h1{
+  position: relative;
+  top:15rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#header h1::before{
+  content: "It's Time To Stop!";
+  animation: fadein  7s;
+  animation-iteration-count: infinite;
+}
+@keyframes fadein {
+  0% {opacity:0; }
+  100% { opacity:100%; 
+        content:"Your Journey Starts Now!";};
+}
+#grid-container2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+#info{
+  width:20rem;
+  font-style: italic;
+}
+#contact-info{
+  width:20rem;
+}
+footer{
+  background-color: lightgrey;
+  padding:5rem 0;
+    }
+#header-container{
+  position: fixed;
+  width: 100%;
+  z-index:100;
+}

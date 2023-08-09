@@ -142,9 +142,9 @@
             <label for="smoking-period">Smoking Period (in Years) </label>
             <div class="radios">
               
-              <label for="smoking-period-1">less than 1 year</label><input type="radio" name="smoking-period" id="smoking-period-1">
+              <label for="smoking-period-1">1- Years</label><input type="radio" name="smoking-period" id="smoking-period-1">
               <label for="smoking-period1-3">1-3</label><input type="radio" name="smoking-period" id="smoking-period1-3">
-              <label for="smoking-period+5">+5 Years</label><input type="radio" name="smoking-period" id="smoking-period+5">
+              <label for="smoking-period+5">5+ Years</label><input type="radio" name="smoking-period" id="smoking-period+5">
             </div>
           </li>
           
@@ -167,13 +167,13 @@
     </div>
     <div id="header-container">
       <div id="left-part-container">
-        <h3>Be Healthier</h3>
+        <div id="header-main"><i class="fa-solid fa-leaf"></i><h3>Be Healthier</h3></div>
       </div>
       <div id="nav-container">
         <ul id="nav-wrapper">
-          <li class="nav"><a href="#header">Home</a></li>
-          <li class="nav"><a href="#info">About</a></li>
-          <li class="nav"><a href="#contact-info">Contact</a></li>
+          <li class="nav"><a href="#damages">Damages</a></li>
+          <li class="nav"><a href="#faq">Is It Hard ?</a></li>
+          <li class="nav"><a href="#plan">Plan</a></li>
           <li class="nav">
             <a onclick=openModal()>Quit Smoking</a>
           </li>
@@ -185,14 +185,14 @@
         </div>
         <!--the full picture at the beginning of the page-->
         <article id="grid-container1">
-            <section class="section reversed">
+            <section  id="damages" class="section reversed">
               <img src="./Assets/Heart trapped.jpeg" alt="a trapped heart" class="squarepic">
-                <div class="paragraph">
+                <div  class="paragraph">
                     <h1>Smoking Kills!</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit doloribus animi voluptas temporibus. Iste deserunt suscipit, asperiores dicta quas laborum sit. Iste deleniti voluptatem dolores modi vitae ratione saepe.</p>
                   </div>
             </section>
-            <section class="section ">
+            <section id='faq' class="section ">
                 <img src="./Assets/Graph.jpeg" alt="graph that shows smokers and non smokers" class="squarepic">
                 <div class="paragraph">
                     <h1>Is it really that hard to quit?</h1>
@@ -200,7 +200,7 @@
                 </div>
                 
             </section>
-            <section class="section" >
+            <section id='plan' class="section" >
                 <div class="paragraph">
                     <h1>Our life savor plan</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat a mollitia asperiores deleniti molestias aspernatur neque pariatur! Sint velit reprehenderit magnam asperiores obcaecati, incidunt iste dolore soluta similique quidem ipsam?</p>
@@ -208,7 +208,7 @@
                 <img src="./Assets/Quit smoking.jpeg" alt="Quit sign made by cigarettes" class="squarepic">
             </section>
         </article>
-
+        
         <footer id="grid-container2">
             <div id="info">
               <p>We are a team of individuals trying to help reduce the nummbers of smokers around the world.
