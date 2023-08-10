@@ -38,7 +38,14 @@
   align-items: center;
   justify-content: center;
 }
+
 #form-container{
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+}
+#form{
   background-color: var(--third-clr);
   position: relative;
   width: 50%;
@@ -47,6 +54,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-self:center ;
   align-items: center;
   border-radius: 30px;
 }
@@ -64,13 +72,13 @@
   right: 0;
   border-radius: 0 30px 30px 0;
 }
-#form-container > ul{
+#form > ul{
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-#form-container > ul > li{
+#form > ul > li{
   display: flex;
   justify-content: space-between;
   align-items: center;  
@@ -131,10 +139,11 @@
 .btn:hover{
   background-color: var(--hover-clr);
 }
+
 #close-btn{
   padding: 1rem;
   width: 6rem;
-  background-color:var(--third-clr);
+  background-color:var(--hover-clr);
   color: black;
   cursor: pointer;
   margin-top: 6rem;
@@ -295,7 +304,7 @@
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
   
 
@@ -387,9 +396,10 @@
     font-size: 1.5em;
     
   }
-  cta{
+  .cta{
     width: fit-content;
     color: white;
+
   }
 
 @media (max-height:800px) {
@@ -674,16 +684,16 @@ margin-left: 0;
     margin-bottom: 2rem;
 }
 @media (max-width: 1025px) {
- #form-container > ul > li{
+ #form > ul > li{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap:10px; 
 } 
- #form-container > ul {
+ #form > ul {
   align-items: center; 
 } 
-#form-container{
+#form{
   height: 100%;
 }
 }

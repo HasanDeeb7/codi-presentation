@@ -13,7 +13,7 @@ function closeModal(){
          document.querySelector("#quit-smoking-modal").style.display = 'flex'
     }
     function submit(){
-     const form = document.getElementById("form-container");
+     const form = document.getElementById("form");
      form.innerHTML =
        '<div id="submission"><i class="fa-solid fa-check"></i>Your Response Have Been Submitted Successfully, Our team will contact you as soon as Possible with more details about this the plan of this journey, Don\'t worry at all, We\'re here for you </div> ';
      form.appendChild(button)

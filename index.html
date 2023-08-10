@@ -21,8 +21,10 @@
         </span>
     </div>
     <div id="quit-smoking-modal">
+      
+      <div id="form">
 
-      <div id="form-container">
+      
         <div id="left-green"></div>
         <div id="right-green"></div>
         <ul>
@@ -33,6 +35,10 @@
           <li>
             <label for="name">Last Name: </label>
             <input type="text" id="lname" class="input" required />
+          </li>
+          <li>
+            <label for="email">Email: </label>
+            <input type="email" id="email" class="input" required />
           </li>
           <li>
             <label for="age">Date of Birth </label
@@ -158,12 +164,7 @@
           
         </ul>
         <div id="btn-container">
-          <input
-            type="button"
-            class="btn submit"
-            value="Submit"
-            onclick="submit()"
-          />
+          <input type="button" value="Submit" class="btn submit" onclick=submit()>
           <input
             type="button"
             value="Cancel"
@@ -172,6 +173,7 @@
           />
         </div>
       </div>
+    </div>
     </div>
     <div id="header-container">
       <div id="left-part-container">
@@ -183,6 +185,7 @@
           <li class="nav hide-on-scale"><a href="#damages">Damages</a></li>
           <li class="nav hide-on-scale"><a href="#faq">Is It Hard ?</a></li>
           <li class="nav hide-on-scale"><a href="#plan">Plan</a></li>
+          <li class="nav hide-on-scale"><a href="#support">Support</a></li>
           <li class="nav hide-on-scale"><a href="#testimonials">Testimonials</a></li>
           <li class="nav hide-on-scale"><a href="#about">About Us</a></li>
           <li class="nav hide-on-scale">
@@ -193,6 +196,8 @@
             <ul id="droplist" class="toggle"><li class="nav toggle"><a href="#damages">Damages</a></li>
               <li class="nav toggle"><a href="#faq">Is It Hard ?</a></li>
               <li class="nav toggle"><a href="#plan">Plan</a></li>
+              <li class="nav toggle"><a href="#support">Support</a></li>
+
               <li class="nav toggle"><a href="#testimonials">Testimonials</a></li>
               <li class="nav toggle"><a href="#about">About Us</a></li>
               <li class="nav toggle">
@@ -243,7 +248,7 @@
             <!--adding the last section wouroud-->
             <section class="section ">
                 
-                <div class="paragraph">
+                <div class="paragraph" id="support">
                     <h1>We're here for your Support!</h1>
                     <p>Remember, you are not alone on this journey. Within this supportive environment, a helping hand is always here for you. When you decide to quit smoking, having the right support can make all the difference. Research shows that individuals who receive support during their quitting journey are more likely to succeed.A strong support system is crucial for those aiming to quit smoking. Friends, family, and support groups can provide the encouragement and assistance that can turn your journey towards a smoke-free life into a successful reality.   
                     </p>
