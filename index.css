@@ -389,10 +389,10 @@
   }
   #cta-container > i{
     width: 70%;
-    font-size: 30px;
+    font-size: 1.5em;
     
   }
-  .cta{
+  cta{
     width: fit-content;
     color: white;
   }
@@ -668,13 +668,13 @@ margin-left: 0;
 }
 
 .james{
-    background-image: url(./assets/James.jpg);
+    background-image: url(./Assets/James.jpg);
 }
 .mary{
     background-image: url(./Assets/Mary.jpg);
 }
 .lisa{
-    background-image: url(./assets/Lisa.jpg);
+    background-image: url(./Assets/Lisa.jpg);
 }
 .image-container > img{
     border-radius: 50px;
