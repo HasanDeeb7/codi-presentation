@@ -10,7 +10,7 @@
       href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
       rel="stylesheet"
     />
-    <script src="./js/script.js"></script>
+    
   </head>
   <body>
     <!--adding div and span for progress , wouroud-->
@@ -150,9 +150,9 @@
             <label for="smoking-period">Smoking Period (in Years) </label>
             <div class="radios">
               
-              <label for="smoking-period-1">less than 1 year</label><input type="radio" name="smoking-period" id="smoking-period-1">
+              <label for="smoking-period-1"> 1-</label><input type="radio" name="smoking-period" id="smoking-period-1">
               <label for="smoking-period1-3">1-3</label><input type="radio" name="smoking-period" id="smoking-period1-3">
-              <label for="smoking-period+5">+5 Years</label><input type="radio" name="smoking-period" id="smoking-period+5">
+              <label for="smoking-period+5">+5</label><input type="radio" name="smoking-period" id="smoking-period+5">
             </div>
           </li>
           
@@ -160,14 +160,14 @@
         <div id="btn-container">
           <input
             type="button"
-            id="submit-btn"
+            class="btn submit"
             value="Submit"
             onclick="submit()"
           />
           <input
             type="button"
             value="Cancel"
-            id="cancel-btn"
+            class="btn cancel"
             onclick="closeModal()"
           />
         </div>
@@ -180,13 +180,28 @@
       </div>
       <div id="nav-container">
         <ul id="nav-wrapper">
-          <li class="nav"><a href="#header">Home</a></li>
-          <li class="nav"><a href="#info">About</a></li>
-          <li class="nav"><a href="#contact-info">Contact</a></li>
-          <li class="nav">
+          <li class="nav hide-on-scale"><a href="#damages">Damages</a></li>
+          <li class="nav hide-on-scale"><a href="#faq">Is It Hard ?</a></li>
+          <li class="nav hide-on-scale"><a href="#plan">Plan</a></li>
+          <li class="nav hide-on-scale"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav hide-on-scale"><a href="#about">About Us</a></li>
+          <li class="nav hide-on-scale">
             <a onclick=openModal()>Quit Smoking</a>
           </li>
-        </ul>
+          <li id="droplist-container"><p id="drop-btn">Content <i id='angle-down' class="fa-solid fa-angle-down"></p></i>
+            
+            <ul id="droplist" class="toggle"><li class="nav toggle"><a href="#damages">Damages</a></li>
+              <li class="nav toggle"><a href="#faq">Is It Hard ?</a></li>
+              <li class="nav toggle"><a href="#plan">Plan</a></li>
+              <li class="nav toggle"><a href="#testimonials">Testimonials</a></li>
+              <li class="nav toggle"><a href="#about">About Us</a></li>
+              <li class="nav toggle">
+                <a onclick=openModal()>Quit Smoking</a>
+              </li>
+            </ul>
+            </li>
+            </ul>
+          
       </div>
     </div>
     <div id="header">
@@ -194,7 +209,7 @@
         </div>
         <!--the full picture at the beginning of the page-->
         <article id="grid-container1">
-            <section class="section reversed ">
+            <section id="damages" class="section reversed ">
                 <!--changing the photo , wouroud-->
               
                 <div class="paragraph">
@@ -205,7 +220,7 @@
                     </div>
                     <img src="./Assets/Lungs difference.jpeg" alt="lung of a smoker vs healthy long" class="squarepic">
             </section>
-            <section class="section ">
+            <section id="faq" class="section ">
                 
                 <div class="paragraph">
                     <!--changing paragraph and title wouroud-->
@@ -215,7 +230,7 @@
                     </div>
                 <img src="./Assets/Graph.jpeg" alt="graph that shows smokers and non smokers" class="squarepic">
             </section>
-            <section class="section reversed" >
+            <section id="plan" class="section reversed" >
                 
                 <div class="paragraph">
                     <!--changing paragraph wouroud-->
@@ -235,12 +250,52 @@
                 </div>
                 <img src="./Assets/Support team.jpg" alt="support team" class="squarepic">
             </section>
+            
+    <div id="testimonials" class="testimonials-container">
+        <div class="testimonial-item">
+            <div class="person-info">
+                <div class="image-container james"></div>
+                <div class="name-container">James</div>
+            </div>
+                <div class="text">
+                    <p>
+                        I got divorced about 15 years ago and started smoking. It felt good to go out to the bar and blow off steam. Soon I was up to a pack a day. My friend asked me if I would ever consider quitting. At first, I wasn't sure I could, but he told about Be Helthier sevice so I decided have a shot, they helped me a lot, at first i cut down on the number of cigarettes I smoked and i was suprised by the result. After five months, I was down to a half-a-pack per week. and after a year i was completely clean.
+                    </p>
+                </div>
+    </div>
+        <div class="testimonial-item">
+            <div class="person-info">
+                <div class="image-container mary"></div>
+                <div class="name-container">Mary</div>
+            </div>
+                <div class="text">
+                    <p>
+                        I couldn't climb a flight of stairs or play fetch with the dogs without being short of breath. Even a short walk with the dogs could make me wheeze. I'd always been afraid that if I quit smoking I'd gain weight, but I couldn't live like this anymore. I searched on google for working ways to quit, and i found Be Healthier webpage, I'd tried to quit three times in 45 years, but I'd always had moments of weakness and gone back to smoking. After i asked for help in this webpage, I was prepared.they made me a quit plan, and I wasn't going to let a slip get to me.
+                    </p>
+                </div>
+    </div>
+        <div class="testimonial-item">
+            <div class="person-info">
+                <div class="image-container lisa"></div>
+                <div class="name-container">Lisa</div>
+            </div>
+                <div class="text">
+                    <p>
+                        For years, I relied on sprays and candles to cover up the smell of cigarettes on my clothes. After my husband passed, I moved in with my daughter to help with the grandchildren. I'd wash my clothes twice and would always smoke outside, away from my grandchildren. I didn’t want them to breathe in my smoke. One day i saw a posting about Be Helthier service with a link, after i clicked on that link out of curiosity, i got help from them, after 7 months i completely quit when i wasn't even thinking about it, but they convinced me to!
+                    </p>
+                </div>
+              </div>
+            </div>
+                <div id="cta-container">
+                  <i id="cta-text">We are here for you, and you can be like those quitters, you may think that quitting is hard, but with strong will you can achieve things you can't imagine you could, Just click on the button below and start your fighting journey. </i>
+                  <div class="btn cta" onclick=openModal()>Quit Smoking</div>
+                </div>
         </article>
     
     
 
         <!--new footer wouroud-->
-<footer class="footer-distributed"> 
+<footer id="about" class="footer-distributed"> 
     <div class="footer-left">
         <h3>Be<span>Healthier</span></h3> 
            <p class="footer-company-name">Copyright © 2023 <strong>Be Healthier </strong> All rights reserved</p>
@@ -277,5 +332,6 @@
         
     </div>
   </footer> 
+  <script src="./js/script.js"></script>
 </body>
 </html>

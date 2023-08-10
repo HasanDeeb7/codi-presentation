@@ -15,11 +15,22 @@ function closeModal(){
     function submit(){
      const form = document.getElementById("form-container");
      form.innerHTML =
-       '<div id="submition"><i class="fa-solid fa-check"></i>Your Response Have Been Submitted Successfully, Thank You!</div> ';
+       '<div id="submission"><i class="fa-solid fa-check"></i>Your Response Have Been Submitted Successfully, Our team will contact you as soon as Possible with more details about this the plan of this journey, Don\'t worry at all, We\'re here for you </div> ';
      form.appendChild(button)
-
+    }
+    function toggleDropList(){
+     let dropListElements = document.querySelectorAll('.toggle')
+     const dropList = document.querySelector("#droplist");
+     const computedStyle = window.getComputedStyle(dropList)
+      if (computedStyle.display === "flex") {
+        dropList.style.display = "none";
+      } else {
+        dropList.style.display = "flex";
+      }
     }
 
+    document.querySelector('#drop-btn').addEventListener('click', toggleDropList)
+    document.querySelector('.toggle').addEventListener('click', toggleDropList)
     //progress button
  let calcScrollValue = () => { 
   let scrollProgress = document.getElementById("progress");
